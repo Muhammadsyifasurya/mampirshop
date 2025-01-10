@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 const Navbar: React.FC = () => {
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         <li>
           <Link
             to="/"
-            className="text-white text-2xl font-bold flex items-center gap-2"
+            className="flex items-center gap-2 text-2xl font-bold text-white"
           >
             <img
               src="/MampirShop.webp"
@@ -70,13 +70,13 @@ const Navbar: React.FC = () => {
             <button className="text-white">Logout</button>
           </div>
         ) : ( */}
-        <Link to="/login" className="flex gap-3 bg-white py-2 px-4 rounded-xl">
+        <Link to="/login" className="flex gap-3 px-4 py-2 bg-white rounded-xl">
           <img src="/Like.svg" alt="" height={20} width={20} />
           <h2 className="text-[#2D3436]">Login</h2>
         </Link>
         <Link
           to="/cart"
-          className=" hover:text-gray-200 flex items-center bg-white px-4 rounded-xl"
+          className="flex items-center px-4 bg-white hover:text-gray-200 rounded-xl"
         >
           <img src="/Cart.svg" alt="cart" width={24} height={24} />
           <h2 className="md:text-md ml-2 text-lg font-bold text-[#2D3436]">
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Tombol hamburger untuk menu mobile */}
-      <div className="md:hidden flex items-center">
+      <div className="flex items-center md:hidden">
         <button
           title="hamburger"
           onClick={toggleMobileMenu}
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
 
       {/* Menu mobile */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-indigo-700 p-4 space-y-4">
+        <div className="p-4 space-y-4 bg-indigo-700 md:hidden">
           <Link to="/" className="block text-white hover:text-gray-200">
             Home
           </Link>
