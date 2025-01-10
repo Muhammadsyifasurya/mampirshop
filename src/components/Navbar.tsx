@@ -1,6 +1,5 @@
-// src/components/Navbar.tsx
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Import Link dari react-router-dom
+import { Link } from "react-router-dom"; 
 import { useCart } from "../context/CartContext";
 
 const Navbar: React.FC = () => {
@@ -50,7 +49,7 @@ const Navbar: React.FC = () => {
             className="text-white text-2xl font-bold flex items-center gap-2"
           >
             <img
-              src="/public/MampirShop.webp"
+              src="/MampirShop.webp"
               title="logo"
               className="h-[45px] w-[50px]"
             />
